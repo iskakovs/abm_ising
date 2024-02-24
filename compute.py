@@ -23,3 +23,6 @@ def finish_iter(nw, current_iter, theta):
 def _generate_epsilon():
     mu = state.global_state['mu']
     sigma = state.global_state['sigma']
+
+    eps_minus = np.random.gumbel(mu, sigma)
+    eps_plus = np.random.gumbel(mu, sigma)
