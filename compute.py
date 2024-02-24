@@ -34,3 +34,6 @@ def _generate_utility(neighbor_thoughts, eps_minus, eps_plus):
   
     u_minus = -J * sum(neighbor_thoughts) + eps_minus
     u_plus = J * sum(neighbor_thoughts) + eps_plus
+
+    return u_minus, u_plus
+    
