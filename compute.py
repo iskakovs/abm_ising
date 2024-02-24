@@ -19,3 +19,7 @@ def finish_iter(nw, current_iter, theta):
         # Обновляем состояние, только если с момента выбора прошло тета-периодов
         if current_iter - value["selected_iter"] >= theta:
             nw[key]["state"] = value["selected_state"]
+
+def _generate_epsilon():
+    mu = state.global_state['mu']
+    sigma = state.global_state['sigma']
