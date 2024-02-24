@@ -29,3 +29,6 @@ def _generate_epsilon():
 
     return eps_minus, eps_plus
 
+def _generate_utility(neighbor_thoughts, eps_minus, eps_plus):
+    J = state.global_state["J"]
+    
