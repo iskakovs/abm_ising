@@ -13,3 +13,9 @@ def compute_iter(nw, current_iter, theta):
         # Сохраняем выбранное состояние и итерацию, когда был сделан выбор
         nw[key]["selected_state"] = selected_state
         nw[key]["selected_iter"] = current_iter
+
+def finish_iter(nw, current_iter, theta):
+    for key, value in nw.items():
+        # Обновляем состояние, только если с момента выбора прошло тета-периодов
+        if current_iter - value["selected_iter"] >= theta:
+            nw[key]["state"] = value["selected_state"]
