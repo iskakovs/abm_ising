@@ -26,3 +26,6 @@ def _generate_epsilon():
 
     eps_minus = np.random.gumbel(mu, sigma)
     eps_plus = np.random.gumbel(mu, sigma)
+
+    return eps_minus, eps_plus
+
