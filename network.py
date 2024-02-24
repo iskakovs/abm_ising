@@ -20,3 +20,7 @@ def init_network(graph_type='barabasi_albert'):
             "new_state": initial_state,
             "neighbors": list(map(lambda x: int(x), G.neighbors(node))),
         }
+
+    del G
+    return nw
+    
