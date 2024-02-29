@@ -4,4 +4,4 @@ global_state = {
     "mu": 0,
     "sigma": 1,
     "J": 1,
-} 
+}
