@@ -12,7 +12,7 @@ def init_network(graph_type='barabasi_albert'):
     else:  # По умолчанию граф Барабаши-Альберта
     G = nx.barabasi_albert_graph(N, M, seed=42)
 
-    nw = {} 
+    nw = {}
     for node in G.nodes:
         initial_state = random.choice([-1, 1])
         nw[int(node)] = {
