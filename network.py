@@ -9,7 +9,7 @@ def init_network(graph_type='barabasi_albert'):
     
     if graph_type == 'complete':
     G = nx.complete_graph(N)
-    else:  # По умолчанию граф Барабаши-Альберта
+    else:  # По умолчанию граф Барабаши-Альберта 
     G = nx.barabasi_albert_graph(N, M, seed=42)
 
     nw = {}
